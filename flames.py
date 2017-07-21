@@ -1,5 +1,5 @@
-name1 = input("What's your name? ")
-name2 = input("What's the other person's name?")
+name1 = raw_input("What's your name? ")
+name2 = raw_input("What's the other person's name?")
 name3 = " "
 name4 = " "
 comp = 0
