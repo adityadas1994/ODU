@@ -22,21 +22,21 @@ s4 = list(name4)
 i=0
 j=0
 counter=0
-for i in range(len(s3)):
-    for j in range(len(s4)):
+for i in range(0,len(s3)-1):
+    for j in range(0,len(s4)-1):
         if s3[i] == s4[j]:
             comp = comp+2
             i=i+1
             break
-    break
+
 i=0
 counter=s1+s2
 while fcounter<5:
     if i<6:
         print (fcounter)
         if s6[i]!='*':
-            if counter == 0:
-                counter = s1+s2
+            if counter == 1:
+                counter = comp/2
                 fcounter+=1
                 s6[i]='*'
             else:
