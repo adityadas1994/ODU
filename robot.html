@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<title>ROBOT</title>
+<head>
+<style> 
+.robot-head{
+position: fixed;
+  width: 80px;
+  height: 45px;
+  top: 147px;
+  left: 523px;
+  background:#777777;
+  border-radius: 50px;
+  border: 4px solid #3f3f3f;
+  
+}
+
+.robot-chest{
+position: fixed;
+  width: 120px;
+  height: 200px;
+  top: 205px;
+  left: 503px;
+  background:#777777;
+  border-radius: 30px;
+  border: 4px solid #3f3f3f;
+}
+
+.eyes-right{
+position: fixed;
+  width: 10px;
+  height: 10px;
+  top: 160px;
+  left: 575px;
+  background:#000000;
+  border-radius: 50px;
+  border: 4px solid #3f3f3f;
+}
+.eyes-left{
+position: fixed;
+  width: 10px;
+  height: 10px;
+  top: 160px;
+  left: 541px;
+  animation-name:tingtong;
+  animation-duration: 1.5s;
+   background:#000000;
+    border-radius: 50px;
+  border: 4px solid #3f3f3f;
+}
+.robot-ant1 {
+  position: fixed;
+  width: 9px;
+  height: 9px;
+  top: 118px;
+  left: 535px;
+ animation-name:wink ;
+ animation-duration: 1s;
+ animation-iteration-count: infinite;
+  background:#76C598;
+  border-radius: 100%;
+  border: 5px solid #3F3F3F;
+}
+.robot-ant2 {
+  position: fixed;
+  width: 9px;
+  height: 9px;
+  top: 118px;
+  left: 580px;
+ animation-name: wink;
+ animation-duration: 1s;
+ animation-iteration-count: infinite;
+   background:#f33434;
+  border-radius: 100%;
+  border: 5px solid #3f3f3f;
+}
+.left-pole {
+  position: fixed;
+  width: 5px;
+  height: 18px;
+  top: 132px;
+  left: 543px;
+  background:#3F3F3F;
+}
+.right-pole {
+  position: fixed;
+  width: 5px;
+  height: 18px;
+  top: 132px;
+  left: 585px;
+  background:#3F3F3F;
+}
+.box {
+  position: fixed;
+  width: 70px;
+  height: 18px;
+  top: 500px;
+  left: 530px;
+  background:#3F3F3F;
+}
+.right-hand{
+position: fixed;
+  width: 30px;
+  height: 100px;
+  top: 220px;
+  left: 465px;
+  background:#777777;
+animation-name: dab1;
+animation-duration: 1.5s;
+  border-radius: 30px;
+  border: 2px solid #3f3f3f;
+}
+.left-hand{
+position: fixed;
+  width: 30px;
+  height: 100px;
+  top: 220px;
+  left: 635px;
+animation-name: dab2;
+animation-duration: 1.5s;
+  background:#777777;
+  border-radius: 30px;
+  border: 2px solid #3f3f3f;
+}
+.eyes-left{
+position: fixed;
+  width: 10px;
+  height: 10px;
+  top: 160px;
+  left: 541px;
+animation-name: tingtong;
+animation-duration: 1s;
+  background:#000000;
+    border-radius: 50px;
+  border: 4px solid #3f3f3f;
+}
+@keyframes wink {
+    0%   {background-color: white;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+@keyframes tingtong {
+    0%   {background-color: white;}
+    25%  {background-color: white;}
+    50%  {background-color: white;}
+    100% {background-color: black;}
+}
+ @keyframes dab1 {
+    
+    0%      {  transform: rotate(0deg);
+  		transform-origin: top right; }
+    100%      { transform: rotate(115deg);
+  		transform-origin: top left; }            
+  }
+@keyframes dab2 {
+    
+    0%      {  transform: rotate(0deg);
+  		transform-origin: top right; }
+    100%      { transform: rotate(115deg);
+  		transform-origin: top left; }            
+  }
+
+.Button{
+position: fixed;
+  width: 70px;
+  height:20px;
+  top: 500px;
+  left: 541px;
+    border-radius: 50px;
+}
+</style>
+</head>
+<body>
+
+<div class = "robot-head">
+</div>
+
+<div class = "robot-chest">
+</div>
+
+<div class = "eyes-left id="wink">
+</div>
+
+<div class = "eyes-right">
+</div>
+
+<div class = "robot-ant1">
+</div>
+
+<div class = "robot-ant2">
+</div>
+
+<div class = "left-pole">
+</div>
+
+<div class = "right-pole">
+</div>
+
+<div class = "right-hand" id="dab1">
+</div>
+
+<div class = "left-hand"id="dab2">
+</div>
+
+<div class = "Button" >
+<form>
+<a href="#wink"></a>
+<a href="#dab"></a>
+<a href="#dab"></a>
+<input type="submit" value="Wink">
+</input>
+</form>
+</div>
+
+</body>
+</html>
