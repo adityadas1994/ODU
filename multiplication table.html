@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+
+</style>
+    <meta charset="utf-8" />
+    <meta name="description" content="JavaScript accept user input demo" />
+    <meta name="keywords" content="JavaScript, UserInput" />
+    <title>JavaScript accept user input demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function displayOutput() {
+            var input = document.getElementById("userInput").value;
+            var text = "";
+            var inp = input;
+	   var j = 1;
+	   var temp = 1;
+	   inp1 = 1;
+	   var count=0;
+	   while(count<=inp)
+	   {
+	   text+="<table class='table' style='font-size:24px'>";
+	while(j< 11 && inp1<=11)
+	{    
+		text+="<tr>";
+	while (temp <= inp && inp1<=11)
+	{ input=temp*j;
+   	   text +=" <td>"+temp+"x" + j +"="+ input + "</td>";
+    	  temp++; inp1++;
+          }
+          text +="</tr>";
+          j++;
+          temp=1;
+          
+          if(inp1<=11) 
+          {	inp1=1; }
+          //text+="<br>";
+      }
+      
+      text+="</table>";
+      count++;
+      inp1=1;
+  }
+           
+        document.getElementById("result").innerHTML = text;
+        }
+    </script>
+
+</head>
+<body>
+<div class="table">
+    <h1 id="result">JavaScript Example</h1>
+    <input type="text" id="userInput" placeholder="Enter Number" />
+    <input type="submit" value="Submit" onclick="displayOutput()" />
+</div>
+</body>
+</html>
